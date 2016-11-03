@@ -9,22 +9,33 @@ use JSON::Types ();
 use List::MoreUtils qw/uniq/;
 use Sub::Install;
 
-our %SUB_ALIAS = (
-    number  => 'number',
-    string  => 'string',
-    bool    => 'bool',
-    boolean => 'bool',
-);
+use constant {
+    SUB_ALIAS => {
+        number  => 'number',
+        string  => 'string',
+        bool    => 'bool',
+        boolean => 'bool',
+    },
+    STRICT_SUBS => [qw/
+        number
+        string
+        boolean
+    /],
+    LOOSE_SUBS => [qw/
+        bool
+    /],
+};
 
-our @STRICT_SUBS = qw/
-    number
-    string
-    boolean
-/;
-
-our @LOOSE_SUBS = qw/
-    bool
-/;
+BEGIN {
+    for (keys %{SUB_ALIAS()}) {
+        Sub::Install::install_sub({
+          code => SUB_ALIAS->{$_},
+          from => 'JSON::Types',
+          into => __PACKAGE__,
+          as   => $_,
+        });
+    }
+}
 
 sub import {
     my ($pkg, @args) = @_;
@@ -32,10 +43,10 @@ sub import {
 
     my @subs;
     if (@args == 0) {
-        push @subs, @STRICT_SUBS;
+        push @subs, @{STRICT_SUBS()};
     }
     elsif ($args[0] eq ':loose' || $args[0] eq ':all') {
-        push @subs, @STRICT_SUBS, @LOOSE_SUBS;
+        push @subs, @{STRICT_SUBS()}, @{LOOSE_SUBS()};
     }
     else {
         push @subs, @args;
@@ -43,7 +54,7 @@ sub import {
 
     for (uniq @subs) {
         Sub::Install::install_sub({
-          code => $SUB_ALIAS{$_},
+          code => SUB_ALIAS->{$_},
           from => 'JSON::Types',
           into => $class,
           as   => $_,
