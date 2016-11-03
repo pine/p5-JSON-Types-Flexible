@@ -21,7 +21,7 @@ use constant {
         string
         boolean
     /],
-    LOOSE_SUBS => [qw/
+    LOOSE_SUBS  => [qw/
         bool
     /],
 };
