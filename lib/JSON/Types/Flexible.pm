@@ -72,6 +72,18 @@ JSON::Types::Flexible - Yet another L<JSON::Types> module
 
 JSON::Types::Flexible is yet another L<JSON::Types> module.
 
+=head2 WHY ?
+
+    $ node
+    > typeof(1)
+    'number'
+
+    > typeof("1")
+    'string'
+
+    > typeof(true)
+    'boolean'
+
 =head2 MODE
 
 =head3 Strict mode

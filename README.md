@@ -14,6 +14,18 @@ JSON::Types::Flexible - Yet another [JSON::Types](https://metacpan.org/pod/JSON:
 
 JSON::Types::Flexible is yet another [JSON::Types](https://metacpan.org/pod/JSON::Types) module.
 
+## WHY ?
+
+    $ node
+    > typeof(1)
+    'number'
+
+    > typeof("1")
+    'string'
+
+    > typeof(true)
+    'boolean'
+
 ## MODE
 
 ### Strict mode
