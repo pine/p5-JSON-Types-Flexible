@@ -15,20 +15,27 @@ JSON::Types::Flexible - Yet another [JSON::Types](https://metacpan.org/pod/JSON:
 JSON::Types::Flexible is yet another [JSON::Types](https://metacpan.org/pod/JSON::Types) module.
 
 ## MODE
-=head3 Strict mode
+
+### Strict mode
+
 Export `number`, `string` and `boolean` methods.
 
 ### Loose mode
+
 Export `number`, `string`, `boolean` and `bool` methods.
 
 ## METHODS
-=head3 number
-=head3 string
-=head3 bool
+
+### number
+
+### string
+
+### bool
 
 See also [JSON::Types](https://metacpan.org/pod/JSON::Types).
 
 ### boolean
+
 Alias for `bool`.
 
 # LICENSE
