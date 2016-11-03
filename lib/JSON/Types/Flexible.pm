@@ -73,20 +73,27 @@ JSON::Types::Flexible - Yet another L<JSON::Types> module
 JSON::Types::Flexible is yet another L<JSON::Types> module.
 
 =head2 MODE
+
 =head3 Strict mode
+
 Export C<number>, C<string> and C<boolean> methods.
 
 =head3 Loose mode
+
 Export C<number>, C<string>, C<boolean> and C<bool> methods.
 
 =head2 METHODS
+
 =head3 number
+
 =head3 string
+
 =head3 bool
 
 See also L<JSON::Types>.
 
 =head3 boolean
+
 Alias for C<bool>.
 
 =head1 LICENSE
