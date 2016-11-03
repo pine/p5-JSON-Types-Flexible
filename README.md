@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/pine/p5-JSON-Types-Flexible.svg?branch=master)](https://travis-ci.org/pine/p5-JSON-Types-Flexible)
 # NAME
 
 JSON::Types::Flexible - Yet another [JSON::Types](https://metacpan.org/pod/JSON::Types) module
