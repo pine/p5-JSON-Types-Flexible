@@ -12,8 +12,8 @@ use Sub::Install;
 our %SUB_ALIAS = (
     number  => 'number',
     string  => 'string',
-    boolean => 'bool',
     bool    => 'bool',
+    boolean => 'bool',
 );
 
 our @STRICT_SUBS = qw/
