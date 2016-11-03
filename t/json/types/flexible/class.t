@@ -3,7 +3,6 @@ use warnings FATAL => 'all';
 use utf8;
 
 use Test::More;
-use Test::Exception;
 
 use JSON::XS;
 use JSON::Types::Flexible ();
