@@ -1,7 +1,7 @@
 requires 'perl', '5.008001';
 
 requires 'JSON::Types', '0.05';
-requires 'List::MoreUtils', '0.416';
+requires 'List::MoreUtils';
 requires 'Sub::Install', '0.928';
 
 on 'test' => sub {
