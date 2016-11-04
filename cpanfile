@@ -11,6 +11,7 @@ on 'test' => sub {
 };
 
 on 'develop' => sub {
+    requires 'CPAN::Uploader';
     requires 'Data::Printer', '0.38';
     requires 'Minilla', '3.0.1';
     requires 'Software::License::MIT', '0.103011';
@@ -18,4 +19,5 @@ on 'develop' => sub {
     requires 'Test::MinimumVersion::Fast', '0.04';
     requires 'Test::PAUSE::Permissions', '0.05';
     requires 'Test::Spellunker', '0.4.0';
+    requires 'Version::Next';
 };
