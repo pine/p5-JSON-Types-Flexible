@@ -1,5 +1,5 @@
 name = "JSON-Types-Flexible"
-badges = ["travis"]
+badges = ["travis", "codecov"]
 authority="cpan:PINE"
 license="mit"
 

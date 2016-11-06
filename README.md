@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/pine/p5-JSON-Types-Flexible.svg?branch=master)](https://travis-ci.org/pine/p5-JSON-Types-Flexible)
+[![Build Status](https://travis-ci.org/pine/p5-JSON-Types-Flexible.svg?branch=master)](https://travis-ci.org/pine/p5-JSON-Types-Flexible) [![Coverage Status](http://codecov.io/github/pine/p5-JSON-Types-Flexible/coverage.svg?branch=master)](https://codecov.io/github/pine/p5-JSON-Types-Flexible?branch=master)
 # NAME
 
 JSON::Types::Flexible - Yet another [JSON::Types](https://metacpan.org/pod/JSON::Types) module
