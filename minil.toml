@@ -1,6 +1,7 @@
 name = "JSON-Types-Flexible"
 badges = ["travis", "codecov"]
 authority="cpan:PINE"
+authors = ["Pine Mizune <pinemz@gmail.com>"]
 license="mit"
 
 module_maker="ModuleBuildTiny"

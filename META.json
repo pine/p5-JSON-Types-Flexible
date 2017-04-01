@@ -33,7 +33,7 @@
       },
       "develop" : {
          "requires" : {
-            "CPAN::Uploader" : "0",
+            "CPAN::Uploader" : "0.103013",
             "Data::Printer" : "0.38",
             "Minilla" : "v3.0.1",
             "Perl::Critic" : "1.125",
@@ -44,7 +44,7 @@
             "Test::Perl::Critic" : "1.03",
             "Test::Pod" : "1.41",
             "Test::Spellunker" : "v0.4.0",
-            "Version::Next" : "0"
+            "Version::Next" : "1.000"
          }
       },
       "runtime" : {
