@@ -123,7 +123,7 @@ Alias for C<bool>.
 
 (The MIT license)
 
-Copyright (c) 2016 Pine Mizune E<lt>pinemz@gmail.comE<gt>
+Copyright (c) 2016-2017 Pine Mizune E<lt>pinemz@gmail.comE<gt>
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
